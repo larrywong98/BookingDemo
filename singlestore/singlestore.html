@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Book a Demo</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <link rel="stylesheet" href="singlestore.css">
+    <script src="https://kit.fontawesome.com/b61e47d4c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner">
+            <img class="company-logo" src="singlestore.png" />
+            <p class="company-title">SingleStore</p>
+        </div>
+        <div class="book-demo">
+            <div class="background-icon">
+                <div class="overlay-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#9019f9;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#29addd;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#grad)"
+                            d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 248H128V192H48V248zM48 296V360H128V296H48zM176 296V360H272V296H176zM320 296V360H400V296H320zM400 192H320V248H400V192zM400 408H320V464H384C392.8 464 400 456.8 400 448V408zM272 408H176V464H272V408zM128 408H48V448C48 456.8 55.16 464 64 464H128V408zM272 192H176V248H272V192z" />
+                    </svg>
+                </div>
+
+            </div>
+            <div class="ss-title">
+                <h2>Book a Demo</h2>
+                <p>Help us customize your demo by answering the following questions below.</p>
+            </div>
+            <div class="ss-form">
+                <form>
+                    <div class="ss-email">
+                        <h5>Business Email</h5>
+                        <div class="input-email">
+                            <input type="text" class="email-text" name="email" id="email"
+                                placeholder="Enter your business email" />
+                            <i id="validate-icon"></i>
+                        </div>
+                        <p class="error-email" id="error-email"></p>
+                    </div>
+                    <div>
+                        <div class="ss-dropdown">
+                            <h5>Business Size</h5>
+                            <div class="float-on-top">
+                                <div class="input-dropdown" id="input-dropdown">
+                                    <p id="business">Select Size</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="options" id="options">
+                                    <div class="option">
+                                        <p>1-10</p>
+                                    </div>
+                                    <div class="option">
+                                        <p>11-50</p>
+                                    </div>
+                                    <div class="option">
+                                        <p>51-100</p>
+                                    </div>
+                                    <div class="option">
+                                        <p>101-250</p>
+                                    </div>
+                                    <div class="option">
+                                        <p>251-1000</p>
+                                    </div>
+                                    <div class="option">
+                                        <p>1000+</p>
+                                    </div>
+                                </div>
+                                <p class="error-business" id="error-business"></p>
+                            </div>
+                        </div>
+                        <div class="ss-radio">
+                            <h5>What is the most important thing to you in a solution?</h5>
+                            <div class="radios">
+                                <label class="input-radio">Real-time Analytics
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Scalability
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Query Response Time
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Document Storage
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">High Concurrency
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Full Text Search
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Fast Data Ingest
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="input-radio">Price
+                                    <input type="radio" class="custom-radio" name="radio1" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <p class="error-radio" id="error-radio"></p>
+                        </div>
+                        <div class="ss-submit">
+                            <button class="input-submit" id="input-submit" type="button">Continue to Schedule a Time
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="singlestore.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+/*************** main ***************/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*************** banner ***************/
+.banner {
+    width: 100%;
+    height: 80px;
+    background-color: #24222a;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.company-logo {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+    align-items: center;
+}
+
+.company-title {
+    width: 5em;
+    height: 100%;
+    margin-left: 0.2em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    align-items: center;
+    display: inline-flex;
+}
+
+/*************** content ***************/
+.book-demo {
+    margin-top: 8%;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-icon {
+    height: 120px;
+    width: 120px;
+    background-color: #f9edff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.ss-title h2 {
+    font-size: 2em;
+    font-weight: 500;
+    height: 1.2em;
+    margin-top: 1.3em;
+    margin-bottom: 0px;
+}
+
+.ss-title h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    height: 1.2em;
+    margin-top: 1.3em;
+    margin-bottom: 0px;
+}
+
+.ss-title h4 {
+    font-size: 1.3em;
+    font-weight: 500;
+    height: 1.2em;
+    margin-top: 0.7em;
+    margin-bottom: 0px;
+}
+
+.ss-title p {
+    margin-top: 1em;
+    font-size: 0.9em;
+    height: 4em;
+    color: grey;
+    line-height: 1.9em;
+    font-size: 0.9em;
+    margin-bottom: 0px;
+}
+
+.ss-form {
+    width: 100%;
+}
+
+/*************** input email ***************/
+.ss-email {
+    font-size: 0.9em;
+    text-align: left;
+    line-height: 0.7em;
+}
+
+.ss-email h5 {
+    color: #4c4a57;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+.email-text {
+    height: 2.6em;
+    width: 400px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    font-size: 0.8rem;
+    margin-top: 0em;
+    outline: none;
+}
+
+.input-email {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.email-text:focus {
+    outline: none;
+    border-color: #cc66ff;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.email-text-success {
+    height: 2.6em;
+    width: 400px;
+    color: black;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    font-size: 0.8rem;
+    margin-top: 0em;
+    outline: none;
+    border-color: #1e9456;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.email-text-failure {
+    height: 2.6em;
+    width: 400px;
+    color: black;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    font-size: 0.8rem;
+    margin-top: 0em;
+    outline: none;
+    border-color: #cb3050;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.error-email {
+    display: none;
+}
+
+.error-email-active {
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+
+.fa-solid.fa-circle-check {
+    position: absolute;
+    right: 0.8em;
+    pointer-events: none;
+    color: #00873f;
+}
+
+.fa-solid.fa-triangle-exclamation {
+    position: absolute;
+    right: 0.8em;
+    pointer-events: none;
+    color: #c41337;
+}
+
+/*************** input dropdown ***************/
+.ss-dropdown {
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.ss-dropdown h5 {
+    color: #4c4a57;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.input-dropdown {
+    height: 2.6em;
+    width: 380px;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.input-dropdown-error {
+    height: 2.6em;
+    width: 380px;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.8rem;
+    border-style: solid;
+    border-color: #c41337;
+    border-width: 1.5px;
+}
+
+.input-dropdown-success {
+    height: 2.6em;
+    width: 380px;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.8rem;
+    border-style: solid;
+    border-color: #00873f;
+    border-width: 1.5px;
+}
+
+.input-dropdown-focus {
+    height: 2.6em;
+    width: 380px;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f5;
+    padding: 0 0.8em;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.8rem;
+    border-color: #cc66ff;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.options {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 15.6em;
+    margin-top: 0.4em;
+    line-height: 0.2em;
+    font-size: 0.9em;
+    border-radius: 3px;
+    display: none;
+    top: 2.8em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.option {
+    padding: 0.2em 1em;
+}
+
+.option:hover {
+    background-color: #f3f3f5;
+}
+
+.options.active {
+    display: revert;
+}
+
+.error-business {
+    display: none;
+}
+
+.error-business-active {
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+
+.fa-solid.fa-angle-down {
+    position: absolute;
+    right: 1em;
+    pointer-events: none;
+    font-size: 0.875rem;
+    color: grey;
+}
+
+.float-on-top {
+    position: relative;
+    z-index: 9;
+}
+
+/*************** input radio ***************/
+.ss-radio {
+    text-align: left;
+}
+
+.ss-radio h5 {
+    color: #4c4a57;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    margin-top: 1.8em;
+}
+
+.radios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.7em;
+}
+/* 
+.input-radio input {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+} */
+
+/* 
+.input-radio label {
+    font-size: 0.9em;
+    height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+} */
+
+.error-radio {
+    display: none;
+}
+
+.error-radio-active {
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+
+.input-radio {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+
+.input-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 13px;
+    width: 13px;
+    background-color: #fafafa;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 50%;
+}
+.input-radio:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+.input-radio input:checked ~ .checkmark {
+    background-color: #8800cc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.input-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.input-radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+} 
+
+/*************** input submit ***************/
+
+.input-submit {
+    color: white;
+    background-color: #8800cc;
+    border: none;
+    width: 16em;
+    height: 2.8em;
+    margin-top: 2.3em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.input-submit:hover {
+    background-color: #aa00ff;
+    margin-top: 2.2em;
+}
+
+.input-submit:focus {
+    background-color: #aa00ff;
+    margin-top: 2.2em;
+}
+
+.input-submit:active {
+    background-color: #8800cc;
+    margin-top: 2.3em;
+}
+
+.fa-solid.fa-arrow-right {
+    font-size: 0.9em;
+    margin-left: 0.3em;
+}
+
+.ss-submit {
+    color: white;
+}
+
+/*************** end main ***************/

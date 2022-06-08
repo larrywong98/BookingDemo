@@ -1,0 +1,157 @@
+Welcome!
+For this challenge, you are expected to deliver a website matching the given design spec, using only HTML, CSS & JavaScript.
+The design mockups for each page, along with the UI components' interaction states, can be accessed in Figma. ​​​​In order​ ​to​ inspect ​the​ mockups, ​you​ ​will need​ to be logged in to ​a​ (free) ​Figma​ ​account: https://www.figma.com/file/cHqhfP2yz3gj6OBnHTXpLI/Take-Home-Project?node-id=0%3A1
+We are looking for attention to detail and expect your submission to look and behave exactly as described in the design specification.
+
+Allowed​ ​Third-Party​ ​Libraries
+The​ ​only​ ​third-party​ ​libraries​ ​you​ ​can​ ​use​ ​are:
+
+Font​ ​Awesome:​ ​https://fontawesome.io
+​​​The​ ​HTML​ ​may​ ​load​ ​Font Awesome​ ​rather​ ​than​ ​vending​ ​them​ ​locally.
+
+
+Google​ ​Fonts:​ ​https://fonts.google.com
+You may NOT use web frameworks or libraries such as jQuery, React, Angular, Vue, etc., CSS libraries such as Bootstrap, Bulma, etc., or CSS preprocessors such as LESS or SCSS.
+
+
+Challenge Criteria
+
+Landing page
+
+The​ ​first​ ​page​ ​the​ ​user​ ​will​ ​see​ ​is​ ​the​ ​"Book​ ​a​ ​Demo"​ ​page.​ ​​​This​ ​page​ ​renders​ ​a​ ​form​ ​that requires the user to submit three pieces of information:
+
+Their business email address
+
+
+The size of their business
+
+
+Their business’ most important need from a database solution
+
+​​​All​ ​three​ ​fields​ ​are​ ​required, the user should not be able to proceed until each field is populated with a valid value.
+
+Email Address field
+
+
+The​ ​first​ ​field​ ​(email)​ ​is​ ​a​ ​text​ input ​that​ ​should​ ​validate​ the ​user​ input, checking for ​a​ ​valid​ ​business email.​ The validation should be handled using ​JavaScript​ ​regex.
+
+
+The form should refuse email addresses from the domains of the most common email providers. We consider the following domains to be invalid:
+
+
+Gmail
+
+
+Outlook
+
+
+Hotmail
+
+
+Yahoo
+
+
+Business Size dropdown 
+
+
+The​ ​second​ ​field​ ​(business​ ​size)​ ​is​ ​a​ dropdown​ ​that​ ​contains​ ​the​ ​following​ ​options:​
+
+
+​1-10
+
+
+11-50
+
+
+51-100
+
+
+101-250
+
+
+250-1000
+
+
+1000+
+
+
+The field should have the following behavior and interactions:
+
+
+Clicking the dropdown trigger should display a menu of clickable options
+
+
+The menu should float above the page content, not push it down
+
+
+Clicking an option should set its value as the field’s value and close the menu
+
+
+The currently selected option should be displayed in the dropdown trigger
+
+
+Clicking outside of the menu should close it and not reset the field’s value
+
+
+The design of this dropdown is different from the browser default. Your implementation should match the custom design.
+
+
+Importance Indicator radio buttons
+
+
+The​ ​third​ ​field​ ​(importance​ ​indicator)​ ​is​ ​a​ ​radio-button​ ​set​ that contains​ ​8​ ​options.​ ​​​ Only one radio can be active at a time. When a radio is activated, the previously active radio should now be inactive.
+
+
+The design of these radio buttons is different from the browser default. Your implementation should match the custom design.
+
+
+Form validation
+
+When the user submits the form, its fields’ values should be checked for validity. ​​
+If​ the given email address is invalid, or if any form fields are empty:
+
+The user should not be redirected to a new page
+
+
+An​ ​appropriate error​ message ​should​ ​be​ displayed ​under​ each invalid field
+
+
+Form submission
+
+Submitting a valid form ​will redirect the user to either a qualified or unqualified page. 
+A user is considered unqualified, and should be redirected to the unqualified page, if any of the following options are submitted:
+
+Business​ ​Size​ ​→​ ​1-10
+
+
+Importance​ ​Indicator​ ​→​ ​Document​ ​Storage,​ ​Full​-Text​ ​Search,​ ​Price
+
+A user is considered qualified, and should be redirected to the qualified page, if they do NOT submit any of the previously mentioned options.
+
+Mobile​ ​Optimization​ ​&​ ​Scaling
+The design is intended for use in a web browser on a desktop device only and the centered main content container should be a fixed width (not a percentage of or relative to the window size in any way). 
+This means the UI and content do not need to scale down on smaller window sizes (mobile/tablet). If the window width is smaller than the content width, the user should be able to scroll horizontally to view the overflowing content.
+Interactions
+In​ ​the​ ​design​, ​there​ ​is​ ​a​ ​page​ named ​"Components & States".​ You are not expected to build this page, but instead it ​serves​ ​as​ ​a specification ​of ​the ​various​ ​states​ and interactions ​each​ ​component ​can​ ​have.
+Icons
+All​ ​of​ ​the​ ​icons​ ​in​ ​the​ ​design​ ​are​ ​from​ ​Font​ ​Awesome,​ ​which​ ​you​ ​are​ ​allowed​ ​to​ ​use​ ​in​ ​your project. The icons used are:
+
+https://fontawesome.com/icons/calendar-days?s=regular
+
+
+https://fontawesome.com/icons/calendar-check?s=regular
+
+
+https://fontawesome.com/icons/calendar-xmark?s=regular
+
+The​ ​only​ ​other​ ​image​ ​in​ ​the​ ​design​ ​is​ ​the​ ​logo​ ​which​ ​you​ ​can​ ​download​ ​from https://www.singlestore.com/brand
+Everything​ ​else​ ​should​ ​be​ ​done​ ​with​ ​CSS.
+What we care about
+Visual accuracy – Your implementation should match the design specification perfectly.
+Code quality – The code should follow best practices, be properly structured, and be easy to understand. HTML should be valid.
+Functionality – The form should behave exactly as detailed in this document and the Figma file.
+Your submission will be tested ​in​ ​a​ ​recent​ ​version​ ​of​ ​Chrome​ ​and​ ​Firefox.​ ​​​Other​ ​browsers will​ ​not​ ​be​ ​tested.
+
+Submission
+To​ ​submit​ ​your​ ​result​, ​please​ ​package​ ​up​ ​all​ ​relevant​ ​files​ ​into​ ​either​ ​a​ ​ZIP​ ​or​ ​TAR​ ​file​ ​and​ ​send it through Greenhouse via the provided link in the email.
+The​ ​submission​ ​should​ ​include​ ​an​ ​index.html​ ​file​ ​which​ ​should​ ​open​ ​in​ ​a​ ​web browser​ ​running from​ ​the​ ​local​ ​filesystem.​ ​​​All​ ​paths​ ​to​ ​other​ ​files​ ​should​ ​be​ ​relative.
